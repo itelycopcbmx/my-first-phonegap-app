@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+function Off_iLamp()
+{
+    var req = new XMLHttpRequest();
+     req.open('GET', "https://agent.electricimp.com/HC5-CYm8jmnW?led=1", true);
+     req.send(null);
+}
+ function On_iLamp()
+ {
+    var req = new XMLHttpRequest();
+     req.open('GET', "https://agent.electricimp.com/HC5-CYm8jmnW?led=0", true);
+     req.send(null);
+ }
+
+  function Flick_Slowly()
+  {
+    var req = new XMLHttpRequest();
+	 req.open('GET',"https://agent.electricimp.com/HC5-CYm8jmnW?led=2", true);
+	  req.send(null);
+  }
+
+   function Flick_Faster()
+   {
+    var req = new XMLHttpRequest();
+     req.open('GET', "https://agent.electricimp.com/HC5-CYm8jmnW?led=3", true);
+     req.send(null);
+   }
+
+</script> 
+
+
+
+<INPUT TYPE=BUTTON OnClick=" Off_iLamp(); "VALUE=" Off iLamp" STYLE="width: 125px; height: 35px" >
+<INPUT TYPE=BUTTON OnClick=" On_iLamp (); "VALUE=" On iLamp"  STYLE="width: 125px; height: 35px">
+<p></p>
+<INPUT TYPE=BUTTON OnClick=" Flick_Slowly();"VALUE=" Flick Slowly" STYLE="width: 125px; height: 35px">
+<INPUT TYPE=BUTTON  OnClick=" Flick_Faster();"VALUE=" Flick Faster" STYLE="width: 125px; height: 35px">
+
+
+</body>
+</html>
